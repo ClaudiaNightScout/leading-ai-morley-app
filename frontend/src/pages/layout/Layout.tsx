@@ -17,7 +17,7 @@ const shareButtonStyles: ICommandBarStyles & IButtonStyles = {
     //   position: 'absolute',
     //   right: 20,
       padding: '5px 12px',
-      marginRight: '20px'
+      marginRight: '200px'
     },
     icon: {
       color: '#FFFFFF',

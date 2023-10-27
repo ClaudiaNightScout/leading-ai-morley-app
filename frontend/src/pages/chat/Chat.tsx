@@ -8,7 +8,7 @@ import rehypeRaw from "rehype-raw";
 import uuid from 'react-uuid';
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/learningai.png";
+import Azure from "../../assets/leadingai.svg";
 
 import {
     ChatMessage,

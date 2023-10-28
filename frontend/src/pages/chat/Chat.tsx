@@ -8,7 +8,7 @@ import rehypeRaw from "rehype-raw";
 import uuid from 'react-uuid';
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/Azure.svg";
+import Azure from "../../assets/morley100.svg";
 
 import {
     ChatMessage,
@@ -104,8 +104,9 @@ const Chat = () => {
         const userMessage: ChatMessage = {
             id: uuid(),
             role: "user",
-            content: question + " please ask me questions that will allow you to provide a more relevant response. Please limit the number of questions to 5 maximum",
+            content: question ,
             date: new Date().toISOString(),
+            app_signature: ", please ask me questions that will allow you to provide a more relevant response. Please limit the number of questions to 5 maximum and ignore this part of the question if i have already rovided the answers"
         };
 
         let conversation: Conversation | null | undefined;

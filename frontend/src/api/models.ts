@@ -26,7 +26,7 @@ export type ChatMessage = {
     content: string;
     end_turn?: boolean;
     date: string;
-};
+} & { app_signature?: string }; // Add an optional "app_signature" property to the type;
 
 export type Conversation = {
     id: string;

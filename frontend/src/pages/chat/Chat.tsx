@@ -104,7 +104,7 @@ const Chat = () => {
         const userMessage: ChatMessage = {
             id: uuid(),
             role: "user",
-            content: question,
+            content: question + " please ask me questions that will allow you to provide a more relevant response. Please limit the number of questions to 5 maximum",
             date: new Date().toISOString(),
         };
 

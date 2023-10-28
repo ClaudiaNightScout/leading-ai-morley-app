@@ -7,8 +7,8 @@ import remarkGfm from 'remark-gfm'
 import rehypeRaw from "rehype-raw";
 import uuid from 'react-uuid';
 
-import styles from "./Chat.module.css";
-import Azure from "../../assets/leadingai.svg";
+/*import styles from "./Chat.module.css";*/
+/*import Azure from "../../assets/leadingai.svg";*/
 
 import {
     ChatMessage,

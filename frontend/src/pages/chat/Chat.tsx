@@ -555,7 +555,7 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}>Morley Assistant</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Please ask a question or search for infomration</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Please ask me a question</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
@@ -665,7 +665,7 @@ const Chat = () => {
                             </Stack>
                             <QuestionInput
                                 clearOnSend
-                                placeholder="Ask me a question or request some infomation..."
+                                placeholder="Ask me a question or request some information..."
                                 disabled={isLoading}
                                 onSend={(question, id) => {
                                     appStateContext?.state.isCosmosDBAvailable?.cosmosDB ? makeApiRequestWithCosmosDB(question, id) : makeApiRequestWithoutCosmosDB(question, id)

@@ -104,7 +104,7 @@ const Chat = () => {
         const userMessage: ChatMessage = {
             id: uuid(),
             role: "user",
-            content: question ,
+            content: question + "",
             date: new Date().toISOString(),
             app_signature: ", please ask me questions that will allow you to provide a more relevant response. Please limit the number of questions to 5 maximum and ignore this part of the question if i have already rovided the answers"
         };
@@ -555,8 +555,12 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Welcome to the Morley College Assistant</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Please ask me a question</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>Morley College Assistant</h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>1. Ask like you're talking to a person.</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>2. Mention main words from your topic.</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>3. Keep it short and simple.</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>4. Say what you're talking about.</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>5. Always start with "What," "How," or "Why."</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">

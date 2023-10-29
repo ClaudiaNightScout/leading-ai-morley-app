@@ -556,11 +556,11 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}>Morley College Assistant</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>1. Ask like you're talking to a person.</h2>
-                                <h2 className={styles.chatEmptyStateSubtitle}>2. Mention main words from your topic.</h2>
-                                <h2 className={styles.chatEmptyStateSubtitle}>3. Keep it short and simple.</h2>
-                                <h2 className={styles.chatEmptyStateSubtitle}>4. Say what you're talking about.</h2>
-                                <h2 className={styles.chatEmptyStateSubtitle}>5. Always start with "What," "How," or "Why."</h2>
+                                <h3 className={styles.chatEmptyStateSubtitle}>1. Ask like you're talking to a person.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>2. Mention main words from your topic.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>3. Keep it short and simple.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>4. Say what you're talking about.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>5. Always start with "What," "How," or "Why."</h3>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">

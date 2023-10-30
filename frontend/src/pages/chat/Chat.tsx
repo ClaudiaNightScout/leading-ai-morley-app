@@ -556,12 +556,12 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}>Morley College Assistant</h1>
-                                <h3 className={styles.chatEmptyStateSubtitle}>1. Chat casually, like you're talking to a friend.</h3>
-                                <h3 className={styles.chatEmptyStateSubtitle}>2. Include your topic's main keywords.</h3>
-                                <h3 className={styles.chatEmptyStateSubtitle}>3. Keep questions brief and direct.</h3>
-                                <h3 className={styles.chatEmptyStateSubtitle}>4. Context is key - mention what you're asking about.</h3>
-                                <h3 className={styles.chatEmptyStateSubtitle}>5. Start strong with a "what," "how," or "why" opener.</h3>
-                                <h3 className={styles.chatEmptyStateSubtitle}>Example: "What's the policy on social media use by tutors?"</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>&bull; Chat casually, like you're talking to a friend.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>&bull; Include your topic's main keywords.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>&bull; Keep questions brief and direct.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>&bull; Context is key - mention what you're asking about.</h3>
+                                <h3 className={styles.chatEmptyStateSubtitle}>&bull; Start strong with a "what," "how," or "why" opener.</h3>
+                                <h3 style={{ fontWeight: 'bold' }} className={styles.chatEmptyStateSubtitle}>Example: "What's the policy on social media use by tutors?"</h3>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
